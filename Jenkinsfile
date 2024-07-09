@@ -14,7 +14,6 @@ pipeline {
                      git branch: 'main', credentialsId: 'github', url: 'https://github.com/adarshadakane/Reddit-Clone-CD'
              }
          }
-        
          stage("Update the Deployment Tags") {
             steps {
                 sh """
